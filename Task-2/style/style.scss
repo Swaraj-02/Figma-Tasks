@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//-- Variables --
+$primary-color: #252525;
+$secondary-color: #000000;
+$thired-color: rgba(37, 37, 37, 0.25);
+$fourth-color: rgba(37, 37, 37, 0.80);
+$myfont-1: 'Lato', sans-serif;
+
+//-- Mixin --
+@mixin borderRadius($val) {
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-radius: $val;
+}
+
+.top-container {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.header-image {
+    display: flex;
+    gap: 20px;
+}
+
+/* Header of the page*/
+.header-content {
+    padding: 137px 50px 46px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    font: {
+        family: $myfont-1 ;
+        style: normal;
+    }
+
+}
+
+.page-header {
+    color: $primary-color;
+    line-height: 125%;
+
+    font: {
+        size: 3.5rem;
+        weight: 700;
+    }
+}
+
+.page-desc {
+    color: $fourth-color;
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+a {
+    padding: 18px 48px;
+    @include borderRadius(16px);
+    background: $primary-color;
+    color: #fff;
+    text-decoration: none;
+
+    font: {
+        size: 1.1rem;
+        family: $myfont-1;
+        style: normal;
+    }
+}
+
+.left-image {
+    padding: 50px 0 0 0;
+}
+
+.right-image {
+    padding: 217px 64px 50px 0;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: translatey(-15px);
+    transition-duration: 0.3s;
+}
+
+// bottom section 
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 64px;
+    list-style-type: none;
+}
+
+span {
+    color: $thired-color;
+    line-height: normal;
+
+    font: {
+        family: $myfont-1;
+        size: 2.5rem;
+        weight: 600;
+    }
+
+}

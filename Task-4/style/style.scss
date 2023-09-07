@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//-- variables --
+$myfont: 'Lato', sans-serif;
+$primary-color: #fff;
+$secondary-color: #000000;
+$thired-color: #252525;
+$fourth-color: rgba(37, 37, 37, 0.80);
+
+//-- mixin --
+@mixin borderRadius($val) {
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-radius: $val;
+}
+
+body {
+    width: 100%;
+    display: inline-flex;
+    font-family: $myfont;
+}
+
+img {
+    width: 716px;
+    margin-top: 67px;
+}
+
+/* right corner  */
+
+.right-container {
+    margin: 112px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 88px;
+}
+
+.right-item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+
+.page-header {
+    color: $thired-color;
+    line-height: 125%;
+
+    font: {
+        size: 4rem;
+        weight: 700;
+    }
+}
+
+.page-desc {
+    color: $fourth-color;
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+a {
+    padding: 18px 48px;
+    @include borderRadius(16px);
+    background: $thired-color;
+    color: $primary-color;
+    text-decoration: none;
+
+    font: {
+        size: 1.1rem;
+        style: normal;
+    }
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: #535151;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 35px;
+
+
+    li {
+        font-size: 1.5rem;
+        color: $fourth-color;
+        padding-top: 20px;
+    }
+
+    span {
+        font: {
+            size: 2rem;
+            weight: 800;
+        }
+
+        color: rgba(37, 37, 37, 0.55);
+    }
+}

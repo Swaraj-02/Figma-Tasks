@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//-- Variables --
+$primary-color: #fff;
+$secondary-color: #000000;
+$thired-color: #252525;
+$fourth-color: rgba(37, 37, 37, 0.80);
+$myfont-1: 'Lato', sans-serif;
+
+//-- Mixin --
+
+@mixin borderRadius($val) {
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-radius: $val;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+}
+
+/* Header of the page*/
+
+header {
+    margin: 64px 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    font: {
+        family: $myfont-1 ;
+        style: normal;
+    }
+
+}
+
+.page-header {
+    color: $thired-color;
+    text-align: center;
+    line-height: 125%;
+
+    font: {
+        size: 4rem;
+        weight: 700;
+    }
+}
+
+.page-desc {
+    color: $fourth-color;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+a {
+    padding: 18px 48px;
+    @include borderRadius(16px);
+    background: $thired-color;
+    color: $primary-color;
+    text-decoration: none;
+
+    font: {
+        size: 1.1rem;
+        family: $myfont-1;
+        style: normal;
+    }
+}
+
+/* Gallery Section   */
+
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0 64px 64px 64px;
+}
+
+.gallery-items {
+    width: 316px;
+    height: 288px;
+    background-color: lightgray 50% / cover no-repeat;
+
+}
+
+.gallery-item-1 {
+    background-image: url(/Task-1/img/Rectangle\ 3.png);
+}
+
+.gallery-item-2 {
+    background-image: url(/Task-1/img/Rectangle\ 4\ \(1\).png);
+}
+
+.gallery-item-3 {
+    background-image: url(/Task-1/img/Rectangle\ 4.png);
+}
+
+.gallery-item-4 {
+    background-image: url(/Task-1/img/Rectangle\ 3\ \(1\).png);
+}
+
+.gallery-item-5 {
+    background-image: url(/Task-1/img/1.png);
+}
+
+.gallery-item-6 {
+    background-image: url(/Task-1/img/2.png);
+}
+
+.gallery-item-7 {
+    background-image: url(/Task-1/img/3.png);
+}
+
+.gallery-item-8 {
+    background-image: url(/Task-1/img/4.png);
+}

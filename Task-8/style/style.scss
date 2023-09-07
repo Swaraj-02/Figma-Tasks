@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$color-1: #E5B94B;
+$color-2: rgba(255, 255, 255, 0.50);
+$color-3: #fff;
+$myfont-1: verdana;
+$myfont-2: Work Sans;
+$myfontweight-1: 700;
+$myfontweight-2: 500;
+$myfontweight-3: 300;
+
+body {
+    background: linear-gradient(295deg, #9C2004 5.77%, #AB2706 97.94%);
+    display: inline-flex;
+    gap: 80px;
+}
+
+.circle {
+    margin: 64px;
+    width: 656px;
+    height: 656px;
+    background: $color-1;
+    border-radius: 50%;
+    position: relative;
+
+    svg {
+        color: $color-2;
+    }
+
+
+    .dot-line-2 {
+        position: absolute;
+        left: 68%;
+        top: 80%;
+    }
+
+
+    img {
+        width: 618px;
+        position: absolute;
+        top: -200%;
+        left: -195%;
+
+    }
+}
+
+.content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    font-family: $myfont-2;
+    margin-top: 134px;
+
+    .content-head {
+        font-size: 3.9rem;
+        color: $color-3;
+        font-weight: $myfontweight-1;
+        font-family: $myfont-1;
+    }
+
+    .content-text {
+        font-size: 24px;
+        color: $color-3;
+        font-weight: $myfontweight-3;
+        line-height: 32px;
+    }
+
+
+    a {
+        padding: 18px 48px;
+        border-radius: 30px;
+        background: $color-1;
+        color: #080808;
+        text-decoration: none;
+        padding: 25px 65px;
+
+        font: {
+            size: 1.2rem;
+            style: normal;
+        }
+    }
+
+    a:hover {
+        cursor: pointer;
+        background-color: #535151;
+    }
+
+
+    @media screen and (max-width:992px) {
+        body {
+            flex-wrap: wrap;
+        }
+
+        .content {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .circle {
+            width: 500px;
+            height: 500px;
+
+            top: 10%;
+
+
+            svg {
+                width: 180px;
+            }
+
+            .dot-line-1 {
+                position: absolute;
+                top: -10%;
+            }
+
+            .dot-line-2 {
+                position: absolute;
+                left: 70%;
+                top: 70%;
+            }
+
+            img {
+                width: 400px;
+                top: -130%;
+                left: -175%;
+
+            }
+        }
+    }
+}

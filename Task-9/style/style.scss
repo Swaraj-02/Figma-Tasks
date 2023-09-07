@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// variables
+$color-1: #363830;
+$myfont: Poppins;
+
+//mixin
+@mixin borderRadius($val) {
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-radius: $val;
+}
+
+body {
+    background: linear-gradient(123deg, #C8CCCF 5.59%, #97A3A3 84.01%);
+    position: relative;
+}
+
+.header-design {
+    width: auto 756px;
+    height: auto 310px;
+    margin: 64px 389px 552px 295px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .page-header {
+        font: {
+            family: $myfont;
+            weight: 700;
+            size: 5.5rem;
+            style: normal;
+
+        }
+
+        color: $color-1;
+    }
+
+    .page-desc {
+
+        font: {
+            family: $myfont;
+            weight: 400;
+            size: 1.5rem;
+            style: normal;
+        }
+
+        color: $color-1;
+    }
+
+    a {
+        width: auto 182px;
+        height: 66px;
+        padding: 20px 48px;
+        @include borderRadius(40px);
+        background: $color-1;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        font: {
+            family: verdana;
+            weight: 400;
+            size: 20px;
+        }
+    }
+}
+
+.right-img {
+    position: absolute;
+    left: 55.5%;
+    top: 0;
+    z-index: -1;
+
+}
+
+.left-image {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    z-index: -1;
+}
+
+ul {
+    border-radius: 144px;
+    background: linear-gradient(96deg, rgba(255, 255, 255, 0.30) 6.59%, rgba(255, 255, 255, 0.18) 96.07%);
+    backdrop-filter: blur(12px);
+    padding: 40px 88px;
+    display: flex;
+    width: 65%;
+    position: absolute;
+    bottom: 10%;
+    right: 100px;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        font-family: $myfont;
+    }
+}
+
+span {
+    font: {
+        size: 20px;
+        weight: 600;
+    }
+}
+
+hr {
+    width: 38px;
+    height: 4px;
+    background: $color-1;
+    border: none;
+}
+
+.text {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+}

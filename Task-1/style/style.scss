@@ -128,3 +128,11 @@ ul {
 .gallery-item-8 {
     background-image: url(/Task-1/img/4.png);
 }
+
+@media screen and (max-width: 992px) {
+
+    header {
+        margin: 30px;
+    }
+
+}

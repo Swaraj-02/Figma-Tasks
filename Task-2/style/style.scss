@@ -76,7 +76,7 @@ a {
 }
 
 .left-image {
-    padding: 50px 0 0 0;
+    padding-top: 50px;
 }
 
 .right-image {
@@ -108,6 +108,65 @@ span {
         family: $myfont-1;
         size: 2.5rem;
         weight: 600;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .top-container {
+        flex-wrap: wrap;
+
+        .header-image {
+            padding-left: 50px;
+        }
+    }
+
+    .left-image {
+        width: 350px;
+        padding-top: 20px;
+    }
+
+    .right-image {
+        width: 400px;
+        padding-top: 100px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .bootom-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .page-header,
+    .page-desc {
+        width: 70%;
+    }
+
+    .header-image {
+        flex-wrap: wrap;
+
+    }
+
+    .left-image {
+        padding-top: 30px;
+    }
+
+    .right-image {
+        margin-left: 200px;
+        padding: 0px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:610px) {
+
+    .right-image {
+        margin-left: 10px;
     }
 
 }

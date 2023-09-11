@@ -26,12 +26,7 @@ body {
 }
 
 .left-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 50%;
+    padding-right: 40px;
     padding-bottom: 64px;
 }
 
@@ -261,17 +256,15 @@ body {
     left: 65%;
 }
 
-/* 2nd phase */
+/* Right container */
 
 .header-page {
-    padding: 20px 40px 0 64px;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 40px;
+    padding: 50px 20px 0 80px;
+
 
     h1 {
         color: $primarycolor;
-        line-height: 80px;
+        line-height: 1.4;
 
         font: {
             family: $myfont;
@@ -281,12 +274,14 @@ body {
     }
 
     .header-desc {
+        padding-top: 20px;
         color: $fourthcolor;
+        line-height: 1.2;
 
         font: {
             family: $myfont2;
             size: 2rem;
-            style: normal;
+
         }
     }
 
@@ -294,13 +289,18 @@ body {
         text-decoration: none;
         padding: 24px 48px;
         font-size: 1.6rem;
-        @include borderRadius(16px)
+        @include borderRadius(16px);
+        line-height: 5;
+
+    }
+
+    a:nth-child(2) {
+        margin-left: 30px;
     }
 
     .btn-1 {
         color: $secondarycolor;
         background: $primarycolor;
-        border-radius: 16px;
     }
 
     .btn-1:hover {
@@ -318,10 +318,9 @@ body {
     @include borderRadius(24px);
     border: 1px solid #111;
     display: flex;
-    align-items: flex-start;
-    margin: 40px 0 0 64px;
-    padding: 24px 40px;
-    gap: 80px;
+    justify-content: space-between;
+    margin: 40px 90px 0 60px;
+    padding: 24px 48px;
     cursor: pointer;
 
     p {
@@ -335,22 +334,13 @@ body {
 /* right section  */
 
 .right-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    padding-top: 120px;
-    padding-left: 100px;
+    padding: 170px 112px;
 
     a {
         text-decoration: none;
         cursor: pointer;
         @include borderRadius(16px);
-
-        font: {
-            size: 1.2rem;
-            style: normal;
-        }
+        font-size: 1.2rem;
     }
 }
 
@@ -402,24 +392,25 @@ body {
     right: 12%;
 }
 
-.product-btn-1 {
-    background-color: #685FD4;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    position: absolute;
-    top: 10%;
-    right: -8%;
-}
+.product-btn {
+    a {
+        position: absolute;
+        background-color: #685FD4;
+        color: #fff;
+        padding: 16px 24px;
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
 
-.product-btn-2 {
-    background-color: #685FD4;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    position: absolute;
-    bottom: 10%;
-    left: -12%
+    .product-btn-1 {
+        top: 10%;
+        right: -8%;
+    }
+
+    .product-btn-2 {
+        bottom: 10%;
+        left: -20%
+    }
 }
 
 @media screen and (max-width:980px) {

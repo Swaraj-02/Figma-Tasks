@@ -23,110 +23,100 @@ body {
 }
 
 .header-design {
-    width: auto 756px;
-    height: auto 310px;
-    margin: 64px 389px 552px 295px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    margin: 64px 390px;
+    position: relative;
 
     .page-header {
+        color: $color-1;
+
         font: {
             family: $myfont;
-            weight: 700;
             size: 5.5rem;
-            style: normal;
-
         }
 
-        color: $color-1;
     }
 
     .page-desc {
+        color: $color-1;
+        padding-right: 80px;
 
         font: {
             family: $myfont;
-            weight: 400;
             size: 1.5rem;
-            style: normal;
         }
-
-        color: $color-1;
     }
 
     a {
-        width: auto 182px;
-        height: 66px;
         padding: 20px 48px;
         @include borderRadius(40px);
         background: $color-1;
         color: #fff;
-        border: none;
         cursor: pointer;
         text-decoration: none;
+        line-height: 5;
 
         font: {
-            family: verdana;
-            weight: 400;
-            size: 20px;
+            family: Verdana;
+            size: 1.2rem;
         }
     }
 }
 
 .right-img {
-    max-width: 100%;
     position: absolute;
-    left: 55.5%;
-    top: 0;
+    top: -19%;
+    right: -45%;
     z-index: -1;
 
+}
+
+//Bottom section (content of the page)
+
+.content-box {
+    position: relative;
 }
 
 .left-image {
     position: absolute;
-    left: 5%;
-    bottom: 0;
+    left: 8%;
+    bottom: -25%;
     z-index: -1;
 }
 
 ul {
-    border-radius: 144px;
+    border-radius: 120px;
     background: linear-gradient(96deg, rgba(255, 255, 255, 0.30) 6.59%, rgba(255, 255, 255, 0.18) 96.07%);
     backdrop-filter: blur(12px);
     padding: 40px 88px;
     display: flex;
-    width: 65%;
-    position: absolute;
-    bottom: 10%;
-    right: 100px;
+    justify-content: space-between;
+    margin: 200px 64px 64px 480px;
+    list-style: none;
 
     li {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
         font-family: $myfont;
+        padding-left: 40px;
+
     }
 }
 
 span {
+    line-height: 2;
+
     font: {
-        size: 20px;
+        size: 1.2rem;
         weight: 600;
     }
 }
 
 hr {
-    width: 38px;
+    width: 30px;
     height: 4px;
     background: $color-1;
     border: none;
 }
 
-.text {
-    font: {
-        size: 16px;
-        weight: 400;
-    }
+.content-desc {
+    padding-top: 10px;
+    font-size: 1rem;
 }

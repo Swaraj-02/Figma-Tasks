@@ -1,1 +1,423 @@
-*{padding:0;margin:0;box-sizing:border-box}body{display:flex}.left-container{padding-right:40px;padding-bottom:64px}.logo-box{padding:64px 0 0 64px}.logo{width:100px;height:100px;border-radius:50%;position:relative}.logo span{font-size:15px;position:absolute}.logo svg{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.logo span:nth-child(1){transform:rotate(189deg);top:-9%;left:50%}.logo span:nth-child(2){transform:rotate(185deg);top:-8%;left:40%}.logo span:nth-child(3){transform:rotate(166deg);top:-6%;left:33%}.logo span:nth-child(4){transform:rotate(155deg);top:-2%;left:22%}.logo span:nth-child(5){transform:rotate(134deg);top:5%;left:9%}.logo span:nth-child(6){transform:rotate(130deg);top:12%;left:8%}.logo span:nth-child(7){transform:rotate(125deg);top:19%;left:2%}.logo span:nth-child(8){transform:rotate(110deg);top:27%;left:-1%}.logo span:nth-child(9){transform:rotate(95deg);top:37%;left:-4%}.logo span:nth-child(10){transform:rotate(75deg);top:48%;left:-5%}.logo span:nth-child(11){transform:rotate(65deg);top:61%;left:-1%}.logo span:nth-child(12){transform:rotate(60deg);top:69%;left:5%}.logo span:nth-child(13){transform:rotate(45deg);top:76%;left:10%}.logo span:nth-child(14){transform:rotate(35deg);top:80%;left:16%}.logo span:nth-child(15){transform:rotate(28deg);top:86%;left:24%}.logo span:nth-child(16){transform:rotate(20deg);top:89%;left:31%}.logo span:nth-child(17){transform:rotate(15deg);top:93%;left:40%}.logo span:nth-child(18){transform:rotate(5deg);top:92%;left:46%}.logo span:nth-child(19){transform:rotate(5deg);top:94%;left:54%}.logo span:nth-child(20){transform:rotate(-10deg);top:89%;left:60%}.logo span:nth-child(21){transform:rotate(-20deg);top:85%;left:69%}.logo span:nth-child(22){transform:rotate(-35deg);top:80%;left:77%}.logo span:nth-child(23){transform:rotate(-45deg);top:73%;left:85%}.logo span:nth-child(24){transform:rotate(-55deg);top:66%;left:91%}.logo span:nth-child(25){transform:rotate(-60deg);top:59%;left:94%}.logo span:nth-child(26){transform:rotate(-70deg);top:52%;left:95%}.logo span:nth-child(27){transform:rotate(-80deg);top:43%;left:98%}.logo span:nth-child(28){transform:rotate(-85deg);top:34%;left:97%}.logo span:nth-child(29){transform:rotate(-110deg);top:21%;left:90%}.logo span:nth-child(30){transform:rotate(-120deg);top:10%;left:92%}.logo span:nth-child(31){transform:rotate(-125deg);top:6%;left:83%}.logo span:nth-child(32){transform:rotate(-130deg);top:-2%;left:76%}.logo span:nth-child(33){transform:rotate(-140deg);top:-6%;left:65%}.header-page{padding:50px 20px 0 80px}.header-page h1{color:#050505;line-height:1.4;font-family:Playfair Display;font-size:4rem}.header-page .header-desc{padding-top:20px;color:#333;line-height:1.2;font-family:Work Sans;font-size:2rem}.header-page a{text-decoration:none;padding:24px 48px;font-size:1.6rem;border-radius:16px;line-height:5}.header-page a:nth-child(2){margin-left:30px}.header-page .btn-1{color:#fff;background:#050505}.header-page .btn-1:hover{background:#333}.header-page .btn-2{color:#0b0b0b;border:1px solid #333}.icons{border-radius:24px;border:1px solid #111;display:flex;justify-content:space-between;margin:40px 90px 0 60px;padding:24px 48px;cursor:pointer}.icons p{font-size:1.1rem;font-font-style:normal}.right-container{padding:170px 112px}.right-container a{text-decoration:none;cursor:pointer;border-radius:16px;font-size:1.2rem}.right-product{position:relative}.right-product::before{content:"";width:89%;height:85%;border:2px solid #111;border-radius:48px;top:-10%;left:-14%;display:inline-block;position:absolute;z-index:-2}.right-product::after{content:"";width:70%;height:77%;border:2px solid #111;border-radius:48px;top:29%;left:41%;display:inline-block;position:absolute;z-index:-2}.product-star-1{position:absolute;top:-16%;left:-28%}.product-star-2{position:absolute;top:12%;left:13%}.product-star-3{position:absolute;bottom:7%;right:12%}.product-btn a{position:absolute;background-color:#685fd4;color:#fff;padding:16px 24px;font-size:1.4rem;letter-spacing:1.5px}.product-btn .product-btn-1{top:10%;right:-8%}.product-btn .product-btn-2{bottom:10%;left:-20%}@media screen and (max-width: 980px){body{flex-direction:column;flex-wrap:wrap}.left-container{max-width:100%}.right-container{max-width:100%;padding-bottom:100px}}@media screen and (max-width: 660px){.right-container{max-width:85%}img{width:400px}}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    display: flex
+}
+
+.left-container {
+    padding-right: 40px;
+    padding-bottom: 64px
+}
+
+.logo-box {
+    padding: 64px 0 0 64px
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative
+}
+
+.logo span {
+    font-size: 15px;
+    position: absolute
+}
+
+.logo svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.logo span:nth-child(1) {
+    transform: rotate(189deg);
+    top: -9%;
+    left: 50%
+}
+
+.logo span:nth-child(2) {
+    transform: rotate(185deg);
+    top: -8%;
+    left: 40%
+}
+
+.logo span:nth-child(3) {
+    transform: rotate(166deg);
+    top: -6%;
+    left: 33%
+}
+
+.logo span:nth-child(4) {
+    transform: rotate(155deg);
+    top: -2%;
+    left: 22%
+}
+
+.logo span:nth-child(5) {
+    transform: rotate(134deg);
+    top: 5%;
+    left: 9%
+}
+
+.logo span:nth-child(6) {
+    transform: rotate(130deg);
+    top: 12%;
+    left: 8%
+}
+
+.logo span:nth-child(7) {
+    transform: rotate(125deg);
+    top: 19%;
+    left: 2%
+}
+
+.logo span:nth-child(8) {
+    transform: rotate(110deg);
+    top: 27%;
+    left: -1%
+}
+
+.logo span:nth-child(9) {
+    transform: rotate(95deg);
+    top: 37%;
+    left: -4%
+}
+
+.logo span:nth-child(10) {
+    transform: rotate(75deg);
+    top: 48%;
+    left: -5%
+}
+
+.logo span:nth-child(11) {
+    transform: rotate(65deg);
+    top: 61%;
+    left: -1%
+}
+
+.logo span:nth-child(12) {
+    transform: rotate(60deg);
+    top: 69%;
+    left: 5%
+}
+
+.logo span:nth-child(13) {
+    transform: rotate(45deg);
+    top: 76%;
+    left: 10%
+}
+
+.logo span:nth-child(14) {
+    transform: rotate(35deg);
+    top: 80%;
+    left: 16%
+}
+
+.logo span:nth-child(15) {
+    transform: rotate(28deg);
+    top: 86%;
+    left: 24%
+}
+
+.logo span:nth-child(16) {
+    transform: rotate(20deg);
+    top: 89%;
+    left: 31%
+}
+
+.logo span:nth-child(17) {
+    transform: rotate(15deg);
+    top: 93%;
+    left: 40%
+}
+
+.logo span:nth-child(18) {
+    transform: rotate(5deg);
+    top: 92%;
+    left: 46%
+}
+
+.logo span:nth-child(19) {
+    transform: rotate(5deg);
+    top: 94%;
+    left: 54%
+}
+
+.logo span:nth-child(20) {
+    transform: rotate(-10deg);
+    top: 89%;
+    left: 60%
+}
+
+.logo span:nth-child(21) {
+    transform: rotate(-20deg);
+    top: 85%;
+    left: 69%
+}
+
+.logo span:nth-child(22) {
+    transform: rotate(-35deg);
+    top: 80%;
+    left: 77%
+}
+
+.logo span:nth-child(23) {
+    transform: rotate(-45deg);
+    top: 73%;
+    left: 85%
+}
+
+.logo span:nth-child(24) {
+    transform: rotate(-55deg);
+    top: 66%;
+    left: 91%
+}
+
+.logo span:nth-child(25) {
+    transform: rotate(-60deg);
+    top: 59%;
+    left: 94%
+}
+
+.logo span:nth-child(26) {
+    transform: rotate(-70deg);
+    top: 52%;
+    left: 95%
+}
+
+.logo span:nth-child(27) {
+    transform: rotate(-80deg);
+    top: 43%;
+    left: 98%
+}
+
+.logo span:nth-child(28) {
+    transform: rotate(-85deg);
+    top: 34%;
+    left: 97%
+}
+
+.logo span:nth-child(29) {
+    transform: rotate(-110deg);
+    top: 21%;
+    left: 90%
+}
+
+.logo span:nth-child(30) {
+    transform: rotate(-120deg);
+    top: 10%;
+    left: 92%
+}
+
+.logo span:nth-child(31) {
+    transform: rotate(-125deg);
+    top: 6%;
+    left: 83%
+}
+
+.logo span:nth-child(32) {
+    transform: rotate(-130deg);
+    top: -2%;
+    left: 76%
+}
+
+.logo span:nth-child(33) {
+    transform: rotate(-140deg);
+    top: -6%;
+    left: 65%
+}
+
+.header-page {
+    padding: 50px 20px 0 80px
+}
+
+.header-page h1 {
+    color: #050505;
+    line-height: 1.4;
+    font-family: Playfair Display;
+    font-size: 4rem
+}
+
+.header-page .header-desc {
+    padding-top: 20px;
+    color: #333;
+    line-height: 1.2;
+    font-family: Work Sans;
+    font-size: 2rem
+}
+
+.header-page a {
+    text-decoration: none;
+    padding: 24px 48px;
+    font-size: 1.6rem;
+    border-radius: 16px;
+    line-height: 5
+}
+
+.header-page a:nth-child(2) {
+    margin-left: 30px
+}
+
+.header-page .btn-1 {
+    color: #fff;
+    background: #050505
+}
+
+.header-page .btn-1:hover {
+    background: #333
+}
+
+.header-page .btn-2 {
+    color: #0b0b0b;
+    border: 1px solid #333
+}
+
+.icons {
+    border-radius: 24px;
+    border: 1px solid #111;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 90px 0 60px;
+    padding: 24px 48px;
+    cursor: pointer
+}
+
+.icons p {
+    font-size: 1.1rem
+}
+
+.right-container {
+    margin-top: 170px
+}
+
+.right-container a {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1.2rem
+}
+
+.right-product {
+    position: relative
+}
+
+.right-product::before {
+    content: "";
+    width: 89%;
+    height: 85%;
+    border: 2px solid #111;
+    border-radius: 48px;
+    top: -10%;
+    left: -14%;
+    position: absolute;
+    z-index: -2
+}
+
+.right-product::after {
+    content: "";
+    width: 70%;
+    height: 77%;
+    border: 2px solid #111;
+    border-radius: 48px;
+    top: 29%;
+    left: 41%;
+    position: absolute;
+    z-index: -2
+}
+
+.product-star-1 {
+    position: absolute;
+    top: -16%;
+    left: -28%
+}
+
+.product-star-2 {
+    position: absolute;
+    top: 12%;
+    left: 13%
+}
+
+.product-star-3 {
+    position: absolute;
+    bottom: 7%;
+    right: 12%
+}
+
+.product-btn a {
+    position: absolute;
+    background-color: #685fd4;
+    color: #fff;
+    padding: 16px 24px;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px
+}
+
+.product-btn .product-btn-1 {
+    top: 10%;
+    right: -8%
+}
+
+.product-btn .product-btn-2 {
+    bottom: 10%;
+    left: -20%
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        flex-wrap: wrap
+    }
+
+    .right-container {
+        margin: 0 145px
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header-page h1 {
+        font-size: 3rem
+    }
+
+    .header-page .header-desc {
+        font-size: 1.3rem
+    }
+
+    .header-page a {
+        padding: 14px 38px;
+        font-size: 1.1rem
+    }
+
+    .icons {
+        margin: 38px 14px 0 60px;
+        padding: 22px 27px
+    }
+
+    .icons p {
+        font-size: 1rem
+    }
+}
+
+.right-container {
+    padding: 77px 128px;
+    margin: 0
+}
+
+.right-container img {
+    width: 380px
+}
+
+.right-container .product-star-1 {
+    width: 120px;
+    top: -19%;
+    left: -29%
+}
+
+.right-container .product-btn a {
+    font-size: 1.2rem
+}

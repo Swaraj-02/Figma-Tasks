@@ -120,3 +120,49 @@ hr {
     padding-top: 10px;
     font-size: 1rem;
 }
+
+@media screen and (max-width: 992px) {
+    .header-design {
+        margin: 64px 100px;
+
+        .page-header {
+            font-size: 4rem;
+        }
+
+        .page-desc {
+            padding-right: 180px;
+            font-size: 1.2rem;
+        }
+    }
+
+    img {
+        width: 361px;
+    }
+
+    .right-img {
+        top: -26%;
+        right: 4%;
+    }
+
+    .left-image {
+        top: 102%;
+        left: 8%;
+
+    }
+
+    ul {
+        margin: 0 50px 400px 40px;
+
+        span {
+            font-size: 1rem;
+        }
+
+        hr {
+            width: 18px;
+        }
+
+        .content-desc {
+            font-size: 0.9rem;
+        }
+    }
+}

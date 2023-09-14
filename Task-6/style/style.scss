@@ -256,11 +256,9 @@ body {
     left: 65%;
 }
 
-/* Right container */
 
 .header-page {
     padding: 50px 20px 0 80px;
-
 
     h1 {
         color: $primarycolor;
@@ -326,15 +324,14 @@ body {
     p {
         font: {
             size: 1.1rem;
-            font-style: normal;
         }
     }
 }
 
 /* right section  */
-
 .right-container {
-    padding: 170px 112px;
+    // padding: 170px 112px;
+    margin-top: 170px;
 
     a {
         text-decoration: none;
@@ -342,6 +339,7 @@ body {
         @include borderRadius(16px);
         font-size: 1.2rem;
     }
+
 }
 
 .right-product {
@@ -356,7 +354,7 @@ body {
     @include borderRadius(48px);
     top: -10%;
     left: -14%;
-    display: inline-block;
+    // display: inline-block;
     position: absolute;
     z-index: -2;
 }
@@ -369,10 +367,11 @@ body {
     @include borderRadius(48px);
     top: 29%;
     left: 41%;
-    display: inline-block;
+    // display: inline-block;
     position: absolute;
     z-index: -2;
 }
+
 
 .product-star-1 {
     position: absolute;
@@ -413,28 +412,61 @@ body {
     }
 }
 
-@media screen and (max-width:980px) {
+
+@media screen and (max-width:992px) {
     body {
-        flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .left-container {
-        max-width: 100%;
-    }
-
     .right-container {
-        max-width: 100%;
-        padding-bottom: 100px;
+        // padding: 77px 271px;
+        margin: 0 145px;
     }
 }
 
 @media screen and (max-width:660px) {
-    .right-container {
-        max-width: 85%;
+    .header-page {
+        h1 {
+            font-size: 3rem;
+        }
+
+        .header-desc {
+            font-size: 1.3rem;
+        }
+
+        a {
+            padding: 14px 38px;
+            font-size: 1.1rem;
+        }
     }
 
+    .icons {
+        margin: 38px 14px 0 60px;
+        padding: 22px 27px;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.right-container {
+    padding: 77px 128px;
+    margin: 0;
+
     img {
-        width: 400px;
+        width: 380px;
+    }
+
+    .product-star-1 {
+        width: 120px;
+        top: -19%;
+        left: -29%
+    }
+
+    .product-btn {
+        a {
+            font-size: 1.2rem;
+        }
     }
 }

@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex
+}
+
+.left-container {
+    margin: 64px 20px 64px 64px
+}
+
+h1 {
+    color: #252525;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-size: 4.6rem;
+    font-weight: 800
+}
+
+.header-desc {
+    color: rgba(37, 37, 37, .8);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-right: 100px;
+    margin-top: 24px
+}
+
+a {
+    padding: 20px 52px;
+    border-radius: 36px;
+    background: #252525;
+    color: #fff;
+    text-decoration: none;
+    line-height: 5;
+    font-size: 1.5rem
+}
+
+.left-bottom-content {
+    display: flex;
+    justify-content: space-between
+}
+
+.left-bottom-content .spiral {
+    margin-top: 120px;
+    margin-left: 142px
+}
+
+.right-container {
+    margin: 64px 64px 64px 0;
+    position: relative
+}
+
+.waves {
+    line-height: 3.5;
+    position: absolute;
+    right: 80%;
+    top: 1%
+}
+
+.waves .dawn-left {
+    margin-top: 200px;
+    margin-left: 100px
+}
+
+.img-container {
+    display: flex
+}
+
+.left-img-1 {
+    padding-top: 250px;
+    padding-right: 20px
+}
+
+.dawn-right {
+    position: absolute;
+    top: 50%;
+    right: 0
+}
+
+.profile-box {
+    margin-top: 190px;
+    padding: 11px;
+    display: flex;
+    gap: 15px
+}
+
+.profile-box .profile-desc {
+    font-size: 1.3rem;
+    color: rgba(37, 37, 37, .8)
+}

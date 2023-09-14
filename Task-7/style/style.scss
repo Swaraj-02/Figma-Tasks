@@ -56,12 +56,16 @@ img {
 }
 
 @media screen and (max-width:992px) {
+
+    .page-header {
+        padding-right: 0;
+    }
+
     ul {
         flex-wrap: wrap;
 
-    }
-
-    p {
-        max-width: 50%;
+        li {
+            flex-basis: 50%;
+        }
     }
 }

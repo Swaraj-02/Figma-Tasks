@@ -23,7 +23,8 @@ h1 {
 
 ul {
     display: flex;
-    gap: 30px;
+    // gap: 30px;
+    justify-content: space-between;
     padding: 0 64px 30px;
     list-style: none;
 
@@ -57,12 +58,20 @@ ul {
         flex-wrap: wrap;
         padding-top: 0;
 
+        li {
+            flex-basis: 25%;
+        }
+
         p {
             font-size: 1rem;
             padding: 20px 0;
         }
 
-        //Working on media query later
+        span {
+            line-height: 1;
+        }
+
+
     }
 }
 

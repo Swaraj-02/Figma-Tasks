@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//  --- Variables --- 
+$primary-color: #252525;
+$secondary-color: #FFF;
+$thired-color: rgba(37, 37, 37, 0.45);
+$fourth-color: rgba(37, 37, 37, 0.85);
+
+//-- Mixin --
+@mixin borderRadius($val) {
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-radius: $val;
+}
+
+body {
+    display: flex;
+    margin: 64px;
+    font-family: 'EB Garamond', serif;
+
+}
+
+span {
+    color: $thired-color;
+
+    font: {
+        size: 1.5rem;
+        weight: 700;
+    }
+}
+
+.content-desc {
+    margin-top: 15px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+    color: $fourth-color;
+    line-height: 1.4;
+
+}
+
+// left section 
+
+.left-container {
+    position: relative;
+
+    .left-png-1 {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .left-png-2 {
+        position: absolute;
+        top: 20%;
+        left: 60%;
+    }
+
+    .left-img {
+        margin-top: 40px;
+    }
+}
+
+//middle section 
+
+.middle-container {
+    background: url(../image/center-bg.png);
+    text-align: center;
+    padding-top: 100px;
+
+    h1 {
+        color: $primary-color;
+        font-size: 6.5rem;
+        font-weight: 500;
+        z-index: 4;
+
+    }
+
+    .middle-desc {
+        color: $fourth-color;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        padding: 0 80px;
+        margin-top: 20px;
+    }
+
+    a {
+        padding: 20px 52px;
+        @include borderRadius(36px);
+        background: $primary-color;
+        color: #fff;
+        text-decoration: none;
+        line-height: 4;
+        font-size: 1.5rem;
+    }
+}
+
+// right section 
+
+.right-container {
+    margin-left: 5px;
+
+    .right-png-1 {
+        position: relative;
+        top: -6%;
+    }
+}
